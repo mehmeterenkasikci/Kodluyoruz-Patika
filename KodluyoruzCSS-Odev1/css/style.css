@@ -1,0 +1,56 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-header {
+    margin: auto;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-navs {
+    justify-content: center;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.product-navs {
+    justify-items: center;
+}
+
+.product-navs-ol {
+    justify-items: center;
+}
+
+.product-navs-ol-li {
+    max-width: 175px;
+    max-height: 375px;
+}
+
+.center-h2 {
+    color: blue;
+    text-align: center;
+}
+
+.center-h3 {
+    color: darkorange;
+    text-align: center;
+}
+
+.center-p {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 250px;
+}
+
+

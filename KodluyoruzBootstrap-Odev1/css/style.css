@@ -1,0 +1,36 @@
+body {
+    background-color: #E9ECEF;
+}
+
+.book-list {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+}
+
+
+.jumbotron h4 {
+    color: darkgoldenrod;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container h4 {
+    color: goldenrod;
+}
+
+.card {
+    background-color: #E9ECEF;
+}
+
+
+.row a{
+    font-weight: bold;
+    cursor: default;
+    text-decoration: none;
+}
+
+
