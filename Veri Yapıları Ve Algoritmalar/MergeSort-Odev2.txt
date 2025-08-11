@@ -1,0 +1,38 @@
+Merge Sort
+Proje 2
+
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+1- Merge Sort'a göre dizimiz tek eleman kalana kadar ikiye ayrılır: 
+	[16,21,11] [8-12-22]
+	
+2- 	[16] [21,11]
+
+3-	[21] [11]
+
+4- [8] [12,22]
+
+5- [12] [22]
+
+6- [16], [21], [11], [8], [12], [22]
+
+7- [11,21]
+
+8- [11,16,21]
+
+9- [12,22]
+
+10- [8,12,22]
+
+11- [8,11,12,16,21,22]
+
+--------------------------------------------------------------------------------------------------------------
+
+Best Case: O(nlogn)
+
+Average Case: O(nlogn)
+
+Worst Case: O(nlogn)
