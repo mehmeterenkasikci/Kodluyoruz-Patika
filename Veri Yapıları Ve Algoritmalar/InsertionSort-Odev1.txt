@@ -1,0 +1,59 @@
+Proje 1 — Insertion Sort
+Başlangıç dizisi:
+[22, 27, 16, 2, 18, 6]
+
+Insertion Sort aşamaları:
+
+İlk eleman (22) zaten yerinde kabul edilir.
+[22, 27, 16, 2, 18, 6]
+
+27 kontrol edilir, 22’den büyük olduğu için yerinde kalır.
+[22, 27, 16, 2, 18, 6]
+
+16 kontrol edilir, 27’den küçük olduğu için 27’nin önüne, 22’den de küçük olduğu için 22’nin önüne gelir.
+[16, 22, 27, 2, 18, 6]
+
+2 kontrol edilir, tüm elemanlardan küçük olduğu için başa gelir.
+[2, 16, 22, 27, 18, 6]
+
+18 kontrol edilir, 27’den küçük olduğu için 27’nin önüne, 22’den küçük olduğu için 22’nin önüne ama 16’dan büyük olduğu için 16’nın arkasına yerleşir.
+[2, 16, 18, 22, 27, 6]
+
+6 kontrol edilir, 27’den, 22’den, 18’den ve 16’dan küçük olduğu için 16’nın önüne ama 2’nin arkasına yerleşir.
+[2, 6, 16, 18, 22, 27]
+
+--------------------------------------------------------------------------------------------------------------
+
+Big-O Gösterimi:
+
+Worst Case: O(n²)
+
+Best Case: O(n)
+
+Average Case: O(n²)
+
+--------------------------------------------------------------------------------------------------------------
+
+Time Complexity:
+Sıralandıktan sonra dizi:
+[2, 6, 16, 18, 22, 27]
+18 ortada olduğundan Average case kapsamına girer.
+
+--------------------------------------------------------------------------------------------------------------
+
+Başlangıç dizisi:
+[7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+Selection Sort ilk 4 adımı:
+
+1- Minimum eleman bulunur (2), baştaki elemanla (7) yer değiştirilir:
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+2- Kalan kısım [3, 5, 8, 7, 9, 4, 15, 6] içinde minimum (3) baştaki 3 ile zaten yerinde, değişim olmaz:
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+3- Kalan kısım [5, 8, 7, 9, 4, 15, 6] içinde minimum (4), 5 ile yer değiştirilir:
+[2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+4- Kalan kısım [8, 7, 9, 5, 15, 6] içinde minimum (5), 8 ile yer değiştirilir:
+[2, 3, 4, 5, 7, 9, 8, 15, 6]
