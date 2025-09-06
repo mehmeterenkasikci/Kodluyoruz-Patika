@@ -85,13 +85,11 @@ const menu = [
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 
-// Sayfa yüklendiğinde çalışsın
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
   displayMenuButtons();
 });
 
-// Menü öğelerini ekrana bas
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     return `
@@ -109,13 +107,13 @@ function displayMenuItems(menuItems) {
       </article>
     `;
   });
-  displayMenu = displayMenu.join(""); // array → string
+  displayMenu = displayMenu.join(""); 
   sectionCenter.innerHTML = displayMenu;
 }
 
-// Kategorilere göre butonlar oluştur
+
 function displayMenuButtons() {
-  // reduce ile kategorileri topla
+
   const categories = menu.reduce(
     function (values, item) {
       if (!values.includes(item.category)) {
@@ -123,7 +121,7 @@ function displayMenuButtons() {
       }
       return values;
     },
-    ["All"] // başa All ekliyoruz
+    ["All"] 
   );
 
   const categoryBtns = categories
@@ -137,7 +135,6 @@ function displayMenuButtons() {
   btnContainer.innerHTML = categoryBtns;
   const filterBtns = btnContainer.querySelectorAll(".btn-item");
 
-  // Butona tıklandığında filtrele
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       const category = e.currentTarget.dataset.id;
